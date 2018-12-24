@@ -18,5 +18,4 @@ public class Finalizado implements EstadosOrcamento{
 	public void finalizado(Orcamento orcamento) throws AtencaoException {
 		throw new AtencaoException("Orçamento já está como Finalizado");
 	}
-
 }

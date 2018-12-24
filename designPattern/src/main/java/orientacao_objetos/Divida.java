@@ -9,15 +9,14 @@ public class Divida {
 	private String credor;
 	private String cnpjCredor;
 	private ArrayList<Pagamento> listaPagamentos = new ArrayList<Pagamento>();
-	
-	
+
 	public void registrarPagamento(Pagamento pagamento) {
 		this.listaPagamentos.add(pagamento);
 		this.efetuarPagamento(pagamento.getValor());
 	}
 	
-	
 	private void efetuarPagamento(double valor) {
+
 		if (valor < 0) {
 			throw new IllegalArgumentException("valor menor que zero");
 		}
@@ -25,10 +24,10 @@ public class Divida {
 		if (valor > 100) {
 			valor -= 8;
 		}
+
 		this.valorPago += valor;
 	}
 
-	
 	public double getTotal() {
 		return total;
 	}
@@ -40,10 +39,6 @@ public class Divida {
 	public double getValorPago() {
 		return valorPago;
 	}
-
-//	public void setValorPago(double valorPago) {
-//		this.valorPago = valorPago;
-//	}
 
 	public String getCredor() {
 		return credor;
@@ -64,6 +59,4 @@ public class Divida {
 	public ArrayList<Pagamento> getListaPagamentos() {
 		return listaPagamentos;
 	}
-
-	
 }

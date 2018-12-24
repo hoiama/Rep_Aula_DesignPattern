@@ -6,5 +6,4 @@ public interface EstadosOrcamento {
 	public void aprovado(Orcamento orcamento) throws AtencaoException;
 	public void reprovado(Orcamento orcamento) throws AtencaoException;
 	public void finalizado (Orcamento orcamento) throws AtencaoException;
-	
 }

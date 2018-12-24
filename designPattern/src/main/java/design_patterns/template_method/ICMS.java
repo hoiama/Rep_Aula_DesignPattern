@@ -16,6 +16,4 @@ public class ICMS extends Template {
 	public double minimo(double valor) {
 		return valor * 0.05;
 	}
-
-
 }

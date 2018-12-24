@@ -14,7 +14,6 @@ public class ICS extends Template {
 
 	@Override
 	public double minimo(double valor) {
-		
 		return valor * 0.15;
 	}
 
