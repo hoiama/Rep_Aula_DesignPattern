@@ -24,5 +24,4 @@ public class ICS extends TemplateImposto {
 	public double minimo(double valor) {
 		return valor * 0.15 + CalcularOutroImposto(valor);
 	}
-
 }

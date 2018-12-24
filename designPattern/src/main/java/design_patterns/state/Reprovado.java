@@ -18,5 +18,4 @@ public class Reprovado implements EstadosOrcamento{
 	public void finalizado(Orcamento orcamento) {
 		orcamento.estadoOrcamento = new Finalizado();
 	}
-
 }

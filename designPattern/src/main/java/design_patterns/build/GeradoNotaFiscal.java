@@ -10,8 +10,6 @@ public class GeradoNotaFiscal implements MetodosNotaFiscal{
 	private double valorNota;
 	private String observacao;
 	private ArrayList<ItemNota> Itens = new ArrayList<ItemNota>();
-	
-	
 
 	public GeradoNotaFiscal razaoSocial(String razaoSocial) {
 		this.razaoSocial = razaoSocial;
@@ -38,5 +36,4 @@ public class GeradoNotaFiscal implements MetodosNotaFiscal{
 	public NotaFiscal criadoNota() {
 		return new NotaFiscal(razaoSocial, valorNota, valorImposto, observacao, cnpj, Itens);
 	}
-
 }

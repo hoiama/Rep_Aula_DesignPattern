@@ -15,7 +15,5 @@ public class DescontoMaisCincoMil implements Desconto{
 
 	public void setProximoDescontoClass(Desconto proximoDescontoClass) {
 		this.proximoDescontoClass = proximoDescontoClass;
-		}
-
-	
+	}
 }

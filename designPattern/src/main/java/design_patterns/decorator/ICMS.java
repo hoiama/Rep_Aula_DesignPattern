@@ -24,6 +24,4 @@ public class ICMS extends TemplateImposto {
 	public double minimo(double valor) {
 		return valor * 0.05 + CalcularOutroImposto(valor);
 	}
-
-
 }

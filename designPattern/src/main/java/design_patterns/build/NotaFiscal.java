@@ -11,10 +11,13 @@ public class NotaFiscal {
 	private String observacao;
 	private ArrayList<ItemNota> itens;
 
-	public NotaFiscal (String razaoSocial,
-						double valorNota,
-						double valorImposto,
-						String obsercacao, long cnpj, ArrayList<ItemNota> itens) {
+	public NotaFiscal (
+			String razaoSocial,
+			double valorNota,
+			double valorImposto,
+			String obsercacao,
+			long cnpj,
+			ArrayList<ItemNota> itens) {
 		
 		this.razaoSocial = razaoSocial;
 		this.valorNota = valorNota;

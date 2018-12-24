@@ -29,5 +29,4 @@ public class Pagamento {
 	public void setCnpjPagador(String cnpjPagador) {
 		this.cnpjPagador = cnpjPagador;
 	}
-
 }

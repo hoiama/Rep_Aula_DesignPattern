@@ -10,6 +10,5 @@ public class Motor implements Runnable{
 	public synchronized void run() {
 		System.out.println("Rodando motor de numero (" + numero + ") : run");
 	}
-	
 } 
 

@@ -2,8 +2,8 @@ package design_patterns.decorator;
 
 public class Decorator {
 
-	
 	public static void main (String[] args) {
+
 		/**
 		 * DECORATOR
 		 */
@@ -21,7 +21,6 @@ public class Decorator {
 		System.out.println("Imposto ICMS + ICS é de " +  impostoICMScomICS.calcular(valor));
 		System.out.println("Imposto ICS + ICMS é de " +  impostoSCScomICMS.calcular(valor));
 		System.out.println("Imposto ICS + (ICMS+ICS) é de " +  impostoSCScom_ICMScomICS.calcular(valor));
-		System.out.println("FINALIZANDO TESTE DE: DECORATOR\n");	
-		
+		System.out.println("FINALIZANDO TESTE DE: DECORATOR\n");
 	}
 }

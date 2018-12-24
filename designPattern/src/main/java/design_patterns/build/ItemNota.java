@@ -4,8 +4,7 @@ public class ItemNota {
 
 	private double valorItemm;
 	private double imposto;
-	
-	
+
 	public double getImposto() {
 		return imposto;
 	}
@@ -18,6 +17,4 @@ public class ItemNota {
 	public void setValorItemm(double valorItemm) {
 		this.valorItemm = valorItemm;
 	}
-	
-	
 }
