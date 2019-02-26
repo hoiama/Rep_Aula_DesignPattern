@@ -1,6 +1,7 @@
 package design_patterns.threads;
 
 public class Motor implements Runnable{
+
 	int numero;
 	
 	public Motor(int numero) {

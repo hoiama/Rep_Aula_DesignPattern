@@ -1,10 +1,7 @@
 package design_patterns.build.observer;
 
 public class Build_observer {
-
-	
 	public static void main(String[] args) {
-		
 		ItemNota cadeira = new ItemNota();
 		cadeira.setImposto(20);
 		cadeira.setValorItemm(100);
@@ -14,24 +11,20 @@ public class Build_observer {
 		mesa.setValorItemm(200);
 		
 		GeradoNotaFiscal geradorNota = new GeradoNotaFiscal()
-		.razaoSocial("razão minha empresa")
-		.cnpj(234543543)
-		.item(cadeira)
-		.item(mesa)
-		.observacao("Obsercação hoiama")
-		.tipoEnvioEscolhido(new enviarEmail())
-		.tipoEnvioEscolhido(new enviarFax());
-		
-		
+			.razaoSocial("razão minha empresa")
+			.cnpj(234543543)
+			.item(cadeira)
+			.item(mesa)
+			.observacao("Obsercação hoiama")
+			.tipoEnvioEscolhido(new EnviarEmail())
+			.tipoEnvioEscolhido(new enviarFax());
+
 		NotaFiscal nota = geradorNota.criadoNota();
-		
-		
+
 		System.out.println(" CNPJ: " + nota.getCnpj() + 
 							" Observação: " + nota.getObservacao() +
 							" Razão Social: " + nota.getRazaoSocial() +
 							" Valor da nota: " + nota.getValorNota());
-		
-		
-		
+
 	}
 }

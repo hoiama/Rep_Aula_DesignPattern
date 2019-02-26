@@ -3,7 +3,6 @@ package design_patterns.decorator;
 public abstract class TemplateImposto {
 	
 	private TemplateImposto outroImposto;
-	
 	public TemplateImposto() {
 		outroImposto = null;
 	}
@@ -13,20 +12,16 @@ public abstract class TemplateImposto {
 	}
 
 	public double CalcularOutroImposto (double valor) {
-
 		if(outroImposto == null) {
 			return 0;
-
 		}else {
 			return outroImposto.calcular(valor);	
 		}
 	}
 	
 	public double calcular(double valor) {
-
 		if(condicaoMaximo(valor)) {
 			return maximo(valor);
-
 		}else {
 			return minimo(valor);
 		}

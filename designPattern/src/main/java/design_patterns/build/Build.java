@@ -12,14 +12,14 @@ public class Build {
 		mesa.setImposto(10);
 		mesa.setValorItemm(200);
 		
-		GeradoNotaFiscal geradorNota = new GeradoNotaFiscal()
+		geradorNotaFiscal geradorNota = new geradorNotaFiscal()
 			.razaoSocial("razão minha empresa")
 			.cnpj(234543543)
 			.item(cadeira)
 			.item(mesa)
 			.observacao("Obsercação hoiama");
 		
-		NotaFiscal nota = geradorNota.criadoNota();
+		setNotaFiscal nota = geradorNota.criadoNota();
 		
 		System.out.println(" CNPJ: " + nota.getCnpj() + 
 				" Observação: " + nota.getObservacao() +

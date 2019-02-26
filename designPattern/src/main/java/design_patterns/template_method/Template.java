@@ -3,10 +3,8 @@ package design_patterns.template_method;
 public abstract class Template {
 	
 	public double calcular(double valor) {
-
 		if(condicaoMaximo(valor)) {
 			return maximo(valor);
-
 		}else {
 			return minimo(valor);
 		}

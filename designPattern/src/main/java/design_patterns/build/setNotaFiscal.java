@@ -2,23 +2,14 @@ package design_patterns.build;
 
 import java.util.ArrayList;
 
-public class NotaFiscal {
+public class setNotaFiscal {
 	
-	private String razaoSocial;
+	private String razaoSocial, observacao;
 	private long cnpj;
-	private double valorImposto;
-	private double valorNota;
-	private String observacao;
+	private double valorImposto, valorNota;
 	private ArrayList<ItemNota> itens;
 
-	public NotaFiscal (
-			String razaoSocial,
-			double valorNota,
-			double valorImposto,
-			String obsercacao,
-			long cnpj,
-			ArrayList<ItemNota> itens) {
-		
+	public setNotaFiscal(String razaoSocial, double valorNota, double valorImposto, String obsercacao, long cnpj, ArrayList<ItemNota> itens) {
 		this.razaoSocial = razaoSocial;
 		this.valorNota = valorNota;
 		this.valorImposto = valorImposto;
@@ -50,6 +41,5 @@ public class NotaFiscal {
 	public ArrayList<ItemNota> getItens() {
 		return itens;
 	}
-	
-	
+
 }

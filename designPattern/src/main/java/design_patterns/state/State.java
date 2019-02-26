@@ -4,8 +4,9 @@ public class State {
 
 	public static void main (String[] args) {
 		
-		//estadoOrcamento : EmAndamento
+		//EstadoOrcamento : EmAndamento
 		Orcamento orcamentoObra = new Orcamento(10000);
+
 		orcamentoObra.calcularDesconto(); 					
 		System.out.println("Desconto: " +  orcamentoObra.desconto);
 		System.out.println("Orcaçemto com Desconto Atual: "  + orcamentoObra.valor);
@@ -16,7 +17,7 @@ public class State {
 		System.out.println("Orcaçemto com Desconto Atual: "  + orcamentoObra.valor);
 		System.out.println("Estado atual: " +  orcamentoObra.estadoOrcamento.getClass().getSimpleName() + "\n");
 
-		//estadoOrcamento : Aprovado
+		//EstadoOrcamento : Aprovado
 		orcamentoObra.aprovado();
 		orcamentoObra.calcularDesconto();
 		System.out.println("Desconto: " +  orcamentoObra.desconto);

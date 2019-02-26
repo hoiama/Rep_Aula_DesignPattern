@@ -3,15 +3,12 @@ package design_patterns.build.observer;
 import java.util.ArrayList;
 
 public class NotaFiscal {
-	
 	private String razaoSocial;
 	private long cnpj;
 	private double valorImposto;
 	private double valorNota;
 	private String observacao;
 	private ArrayList<ItemNota> itens;
-	
-	
 
 	public NotaFiscal (String razaoSocial,
 						double valorNota,
@@ -24,13 +21,8 @@ public class NotaFiscal {
 		this.observacao = obsercacao;
 		this.cnpj = cnpj;
 		this.itens = itens;
-		
 	}
 
-	
-	
-	
-	
 	public String getRazaoSocial() {
 		return razaoSocial;
 	}
@@ -54,6 +46,5 @@ public class NotaFiscal {
 	public ArrayList<ItemNota> getItens() {
 		return itens;
 	}
-	
-	
+
 }

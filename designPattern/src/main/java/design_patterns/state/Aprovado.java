@@ -2,7 +2,7 @@ package design_patterns.state;
 
 public class Aprovado implements EstadosOrcamento {
 
-	 public void calcularDesconto(Orcamento orcamento) {
+	public void calcularDesconto(Orcamento orcamento) {
 		orcamento.desconto = orcamento.valor * 0.05;
 		orcamento.valor -= orcamento.desconto;
 	}

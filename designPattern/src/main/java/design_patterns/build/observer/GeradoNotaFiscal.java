@@ -49,13 +49,8 @@ public class GeradoNotaFiscal implements MetodosNotaFiscal{
 	}
 	
 	public NotaFiscal criadoNota() {
-		 NotaFiscal notaFiscal = new NotaFiscal(razaoSocial, valorNota, valorImposto, observacao, cnpj, Itens);
-		 
-		 
-		for (TipoEnviosNota envios : tiposEnvio) {
-			envios.executa(notaFiscal);
-		}
-		
+		NotaFiscal notaFiscal = new NotaFiscal(razaoSocial, valorNota, valorImposto, observacao, cnpj, Itens);
+		tiposEnvio.forEach(envios -> envios.executa(notaFiscal));
 		return notaFiscal;
 	}
 

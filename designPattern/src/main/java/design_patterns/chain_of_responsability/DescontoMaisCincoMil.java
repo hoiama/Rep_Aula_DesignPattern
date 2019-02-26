@@ -1,7 +1,6 @@
 package design_patterns.chain_of_responsability;
 
 public class DescontoMaisCincoMil implements Desconto{
-
 	Desconto proximoDescontoClass;
 	
 	public Double desconto(double valor) {
