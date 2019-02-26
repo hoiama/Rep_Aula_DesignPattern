@@ -16,6 +16,7 @@ public class Divida {
 	}
 	
 	private void efetuarPagamento(double valor) {
+
 		if (valor < 0) {
 			throw new IllegalArgumentException("valor menor que zero");
 		}

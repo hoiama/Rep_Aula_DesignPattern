@@ -13,6 +13,7 @@ public class Orcamento {
 	public void calcularDesconto() {
 		try {
 			estadoOrcamento.calcularDesconto(this);
+
 		}catch(Exception ex) {
 			System.out.println(ex.getMessage());
 		}
@@ -21,6 +22,7 @@ public class Orcamento {
 	public void aprovado() {
 		try {
 			estadoOrcamento.aprovado(this);
+
 		}catch(Exception ex) {
 			System.out.println(ex.getMessage());
 		}
@@ -29,6 +31,7 @@ public class Orcamento {
 	public void reprovado() {
 		try {
 			estadoOrcamento.reprovado(this);
+
 		}catch(Exception ex) {
 			System.out.println(ex.getMessage());
 		}
@@ -37,6 +40,7 @@ public class Orcamento {
 	public void finalizado() {
 		try {
 			estadoOrcamento.finalizado(this);
+
 		}catch(Exception ex) {
 			System.out.println(ex.getMessage());
 		}

@@ -4,10 +4,12 @@ public class EmAndamento implements EstadosOrcamento{
 	private int contador = 0;
 	
 	public void calcularDesconto(Orcamento orcamento) throws AtencaoException {
+
 		if(contador == 0) {
 			orcamento.desconto = orcamento.valor * 0.10;
 			orcamento.valor -= orcamento.desconto; 
 			contador ++;
+
 		} else {
 			throw new AtencaoException("Desconto já foi iaplicado");
 		}
